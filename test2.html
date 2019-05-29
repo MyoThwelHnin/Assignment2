@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <style>
+
+        .wrapper{
+
+            margin-left: 50px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: [col1-start] 300px [col2-start] 300px [col3-start] 200px [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+        }
+
+        .box{
+            padding: 10px;
+        }
+
+        .a{
+            grid-column: col1-start / col3-end;
+            grid-row: row1-start;
+        }
+
+        .b{
+
+            grid-column: col1-start / col2-end;
+            grid-row: row2-start;
+        }
+        
+        .c{
+
+            grid-column: col3-start;
+            grid-row: row2-end;
+        }
+        
+    </style>
+    <body>
+
+        <div class="wrapper">
+            <div class="box a">One Direction Song</div>
+            <div class="box b"><video controls><source src="OneDirection.mp4" type="video/mp4"></video></div>
+            <div class="box c">One Direction are a British-Irish boy band consisting of members Niall Horan, Liam Payne, Harry Styles and Louis Tomlinson. After placing third in the seventh series of The X Factor, they were signed to Simon Cowell's Syco Records.
+            </div>
+        </div>
+    </body>
+</html>
